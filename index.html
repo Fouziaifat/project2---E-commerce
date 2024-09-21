@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neumorphic Ecommerce Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">GourmetZone</div>
+      <div class="cart-icon" onclick="toggleCart()">
+        <i class="ri-shopping-cart-2-fill"></i>
+        <div class="cart-badge">0</div>
+      </div>
+    </header>
+
+    <section class="product-grid">
+      <div class="product-card">
+        <img src="./images/img1.jpg" alt="Food 1" />
+        <h3>Shawarma</h3>
+        <p>$5.99</p>
+        <button onclick="addTocard('Shawarma', 5.99)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/img2.jpg" alt="Food 2" />
+        <h3>Manchurian</h3>
+        <p>$3.00</p>
+        <button onclick="addTocard('Manchurian' , 3.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/img3.jpg" alt="Food 3" />
+        <h3>Pancakes</h3>
+        <p>$6.99</p>
+        <button onclick="addTocard('Pancakes' , 6.99)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/food3.jpg" alt="Food 4" />
+        <h3>Biryani</h3>
+        <p>$9.99</p>
+        <button onclick="addTocard('Biryani' , 9.99)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/img4.jpg" alt="Food 5" />
+        <h3>Fish & Chips</h3>
+        <p>$12.00</p>
+        <button onclick="addTocard('Fish & Chips' , 12.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/img5.jpg" alt="Food 6" />
+        <h3>Pistachio Pudding</h3>
+        <p>$4.50</p>
+        <button onclick="addTocard('Pistachio Pudding' , 4.50)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/img6.jpg" alt="Food 6" />
+        <h3>Lemon Pie</h3>
+        <p>$15.99</p>
+        <button onclick="addTocard('Lemon Pie' , 15.99)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/img7.jpg" alt="Food 6" />
+        <h3>Kheer</h3>
+        <p>$8.50</p>
+        <button onclick="addTocard('Kheer' , 8.50)">Add to Cart</button>
+      </div>
+    </section>
+
+    <div class="cart-popup" id="cart-popup">
+      <div class="cart-content">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <p>Total: $<span id="total-price">0.00</span></p>
+        </div>
+        <button class="close-cart"  onclick="toggleCart()">Close Cart</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
